@@ -1,11 +1,8 @@
 "==========================================
-" Author:  wklken
+" Author:  KNG
 " Version: 9.1
-" Email: wklken@yeah.net
-" BlogPost: http://www.wklken.me
+" Email: kngzhi@foxmail.com
 " ReadMe: README.md
-" Donation: http://www.wklken.me/pages/donation.html
-" Last_modify: 2015-12-15
 " Sections:
 "       -> Initial Plugin 加载插件
 "       -> General Settings 基础设置
@@ -90,6 +87,8 @@ set noswapfile
 
 set wildignore=*.swp,*.bak,*.pyc,*.class,.svn
 
+" 不让光标闪烁，band cursor blink
+:set guicursor=a:blinkwait0-blinkon0-blinkoff0
 " 突出显示当前列
 set cursorcolumn
 " 突出显示当前行
@@ -101,12 +100,12 @@ set cursorline
 set t_ti= t_te=
 
 
-" 鼠标暂不启用, 键盘党....
-set mouse-=a
+" 目前启用 mouse
+" set mouse-=a
 " 启用鼠标
-" set mouse=a
+set mouse=a
 " Hide the mouse cursor while typing
-" set mousehide
+set mousehide
 
 
 " 修复ctrl+m 多光标操作选择的bug，但是改变了ctrl+v进行字符选中时将包含光标下的字符
@@ -155,7 +154,7 @@ set laststatus=2
 " 显示行号
 set number
 " 取消换行
-set nowrap
+"set nowrap
 
 " 括号配对情况, 跳转并高亮一下匹配的括号
 set showmatch
@@ -225,7 +224,6 @@ set ttyfast
 
 " 00x增减数字时使用十进制
 set nrformats=
-
 " 相对行号: 行号变成相对，可以用 nj/nk 进行跳转
 set relativenumber number
 au FocusLost * :set norelativenumber number
@@ -417,6 +415,7 @@ nnoremap ; :
 
 
 " 命令行模式增强，ctrl - a到行首， -e 到行尾
+" 这句话的意思是指只有在命令行的情况下有用，即 `:` 情况下使用；
 cnoremap <C-j> <t_kd>
 cnoremap <C-k> <t_ku>
 cnoremap <C-a> <Home>
@@ -450,12 +449,16 @@ autocmd BufNewFile,BufRead *.py inoremap # X<c-h>#
 
 " tab/buffer相关
 
-" 切换前后buffer
-nnoremap [b :bprevious<cr>
-nnoremap ]b :bnext<cr>
+" 切换 buffer
+" <Pracital Vim> 技巧36；
+nnoremap <silent> [b :bprevious<cr>
+nnoremap <silent> ]b :bnext<cr>
+nnoremap <silent> [B :bfirst<cr>
+nnoremap <silent> ]B :blast<cr>
+
 " 使用方向键切换buffer
-noremap <left> :bp<CR>
-noremap <right> :bn<CR>
+" noremap <left> :bp<CR>
+" noremap <right> :bn<CR>
 
 
 " tab 操作
@@ -476,16 +479,16 @@ map <leader>td :tabclose<cr>
 map <leader>tm :tabm<cr>
 
 " normal模式下切换到确切的tab
-noremap <leader>1 1gt
-noremap <leader>2 2gt
-noremap <leader>3 3gt
-noremap <leader>4 4gt
-noremap <leader>5 5gt
-noremap <leader>6 6gt
-noremap <leader>7 7gt
-noremap <leader>8 8gt
-noremap <leader>9 9gt
-noremap <leader>0 :tablast<cr>
+nnoremap <D-1> 1gt
+nnoremap <D-2> 2gt
+nnoremap <D-3> 3gt
+nnoremap <D-4> 4gt
+nnoremap <D-5> 5gt
+nnoremap <D-6> 6gt
+nnoremap <D-7> 7gt
+nnoremap <D-8> 8gt
+nnoremap <D-9> 9gt
+nnoremap <D-0> :tablast<cr>
 
 " Toggles between the active and last active tab "
 " The first tab is always 1 "
@@ -531,8 +534,8 @@ cmap w!! w !sudo tee >/dev/null %
 inoremap kj <Esc>
 
 " 滚动Speed up scrolling of the viewport slightly
-nnoremap <C-e> 2<C-e>
-nnoremap <C-y> 2<C-y>
+nnoremap <C-e> 4<C-e>
+nnoremap <C-y> 4<C-y>
 
 
 " Jump to start and end of line using the home row keys
@@ -557,6 +560,8 @@ nnoremap U <C-r>
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
+" Quickly edit/reload the vimrc.bundle file
+nmap <silent> <leader>eb :e $MYVIMRC.BUNDLES<CR>
 "==========================================
 " FileType Settings  文件类型设置
 "==========================================
@@ -663,10 +668,12 @@ endif
 
 " theme主题
 set background=dark
+" set highlight for colorcolumn
+highlight ColorColumn ctermbg=darkGrey
 set t_Co=256
 
-colorscheme solarized
-" colorscheme molokai
+" colorscheme solarized
+colorscheme molokai
 " colorscheme desert
 
 
@@ -684,7 +691,3 @@ highlight clear SpellRare
 highlight SpellRare term=underline cterm=underline
 highlight clear SpellLocal
 highlight SpellLocal term=underline cterm=underline
-
-
-
-
