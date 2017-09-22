@@ -1,0 +1,2 @@
+# dotfile
+all setting
