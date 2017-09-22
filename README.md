@@ -1,5 +1,3 @@
-k-vim
-=======================
 
 
 > VERSION: 9.2
@@ -340,3 +338,6 @@ Blog: [http://www.wklken.me](http://www.wklken.me)
 2013-06-11 于深圳
 
 
+=======
+# dotfile
+all setting
