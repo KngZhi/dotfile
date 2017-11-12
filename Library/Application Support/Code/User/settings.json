@@ -1,0 +1,120 @@
+{
+    // general
+    "workbench.startupEditor": "none",
+    "editor.snippetSuggestions": "top",
+    "editor.minimap.enabled": true,
+    "editor.lineNumbers": "relative",
+    "editor.cursorStyle": "line",
+    "editor.cursorBlinking": "solid",
+    "editor.wordWrap": "off",
+    "editor.tabSize": 2,
+    "editor.fontSize": 16,
+    "files.autoSave": "onFocusChange",
+    "[markdown]": {
+        "editor.quickSuggestions": true
+    },
+
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/dist": true,
+        "**/build": true,
+        "**/mock2easy_backup": true
+    },
+    "emmet.syntaxProfiles": {
+        "javascript": "js",
+        "vue": "html",
+        "vue-html": "html"
+    },
+    // theme
+    // "workbench.colorTheme": "An Old Hope",
+    "workbench.iconTheme": "vs-seti",
+
+    // vim mode 
+    "vim.easymotion": true,
+    "vim.useSystemClipboard": true,
+    "vim.disableAnnoyingNeovimMessage": true,
+    "vim.visualstar": true,
+    "vim.handleKeys": {
+        "<C-f>": false,
+        "<C-n>": false,
+        "<C-e>": false,
+        "<C-a>": false
+    },
+    "vim.leader": ",",
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>","f"],
+            "after": ["$", "V", "%"]
+        },
+        {
+            "before": ["<leader>","t"],
+            "after": ["O", "<Esc>", "j"]
+        },
+        {
+            "before": ["<leader>","y"],
+            "after": ["$", "V", "%", "y"]
+        },
+        {
+            "before": ["<leader>", "d"],
+            "after": ["$", "V", "%", "d"]
+        }
+    ],
+    // markdownlint
+    "markdownlint.config": {
+        "MD013": false,
+        "MD004": false
+    },
+
+    // eslint
+    "eslint": {
+        "autoFixOnSave": true
+    },
+
+    // beautify
+    "beautify.language": {
+        "js": {
+            "type": [
+                "javascript",
+                "json"
+            ],
+            "filename": [
+                ".jshintrc",
+                ".jsbeautify"
+            ]
+        },
+        "css": [
+            "css",
+            "scss"
+        ],
+        "html": [
+            "htm",
+            "html"
+        ],
+        "md": ["markdown", "md"]
+    },
+    "window.zoomLevel": 0,
+
+    "sync.gist": "37684169dcf32dad8351c8da5e6cded8",
+    "sync.lastUpload": "2017-10-09T07:38:06.947Z",
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastDownload": "",
+    "sync.forceDownload": false,
+    "sync.anonymousGist": false,
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    "files.associations": {
+        "*.js": "javascriptreact"
+    },
+
+    "cSpell.language": "en-US,en-GB",
+    "cSpell.ignoreRegExp": "/[A-F_]+/g",
+    "cSpell.words": [
+        "opmanage"
+    ],
+    "workbench.sideBar.location": "right",
+    "explorer.confirmDragAndDrop": false
+}

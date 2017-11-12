@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>instant ExportSlices {
+    document = "&lt;MSImmutableDocumentData: 0x600000af9e00&gt; (40816160-7048-47DE-AADB-0A75350F08A6)";
+    exports =     (
+                {
+            path = "/Users/kng/Desktop/\U9996\U9875.png";
+            request = "&lt;MSExportRequest: 0x6080006e7f00&gt;";
+        }
+    );
+}</string>
+	<string>instant DocumentSaved {
+    autosaved = 1;
+    document = "&lt;MSDocument: 0x7fd452e56890&gt;";
+    size = 1473418;
+}</string>
+	<string>begin Export {
+    action = "&lt;MSExportAction: 0x618000c72b80&gt;";
+    document = "&lt;MSDocument: 0x7fd452e56890&gt;";
+}</string>
+	<string>finish Export {
+    action = "&lt;MSExportAction: 0x618000c72b80&gt;";
+    document = "&lt;MSDocument: 0x7fd452e56890&gt;";
+}</string>
+	<string>begin Export {
+    action = "&lt;MSExportAction: 0x618000c72b80&gt;";
+    document = "&lt;MSDocument: 0x7fd452e56890&gt;";
+}</string>
+	<string>finish Export {
+    action = "&lt;MSExportAction: 0x618000c72b80&gt;";
+    document = "&lt;MSDocument: 0x7fd452e56890&gt;";
+}</string>
+	<string>begin ExportSelectionWithExportFormats {
+    action = "&lt;MSExportSelectionWithExportFormatsAction: 0x618000c75b40&gt;";
+    document = "&lt;MSDocument: 0x7fd452e56890&gt;";
+}</string>
+	<string>finish ExportSelectionWithExportFormats {
+    action = "&lt;MSExportSelectionWithExportFormatsAction: 0x618000c75b40&gt;";
+    document = "&lt;MSDocument: 0x7fd452e56890&gt;";
+}</string>
+	<string>begin ExportPDFBook {
+    action = "&lt;MSExportPDFBookAction: 0x618000c72bc0&gt;";
+    document = "&lt;MSDocument: 0x7fd452e56890&gt;";
+}</string>
+	<string>finish ExportPDFBook {
+    action = "&lt;MSExportPDFBookAction: 0x618000c72bc0&gt;";
+    document = "&lt;MSDocument: 0x7fd452e56890&gt;";
+}</string>
+	<string>instant CloseDocument {
+    document = "&lt;MSDocument: 0x7fd452e56890&gt;";
+    selection =     (
+        "&lt;MSArtboardGroup: 0x7fd452e29d40&gt; \U9996\U9875 (5F9C8390-46B2-419B-A7EE-CE9436BB02C3)"
+    );
+}</string>
+</array>
+</plist>

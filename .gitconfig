@@ -1,0 +1,28 @@
+[core]
+	excludesfile = /Users/kng/.gitignore_global
+	editor = /usr/bin/vim
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = wb-cjw323074
+	email = wb-cjw323074@alibaba-inc.com
+[commit]
+	template = /Users/kng/.stCommitMsg
+
+[alias]
+    # basic shortcurs
+    co = checkout
+    st = status -s
+    ci = commit
+    br = branch
+    # multi-line log
+    ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+
+    # for ali project
+    asm = add src/ mock/
+
