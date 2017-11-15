@@ -10,7 +10,7 @@ export ZSH=/Users/kng/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="avit"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -91,10 +91,15 @@ alias v='vim'
 alias bd='dn build -e daily'
 alias dev='dn dev'
 alias gcl='gclean && gco -- .'
-alias gac='git asm && git commit'
 # git gac and quick commit
-alias gacq='gac -m "update"'
 alias gbuild='git add . && git commit -m "update by kng"'
 alias gms='gm --squash'
 alias gstu='gss -uno'
 alias gdaily='bd && gbuild && ggpush'
+
+# git for fe
+alias gafe='ga src/ mock2easy && gc'
+
+# git for abc-console
+alias gac='git add src/ mock  && git commit'
+alias gacq='gac -m "update"'

@@ -116,5 +116,8 @@
         "opmanage"
     ],
     "workbench.sideBar.location": "right",
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "cSpell.userWords": [
+        "mbox"
+    ]
 }
